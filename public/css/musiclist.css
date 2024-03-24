@@ -1,0 +1,258 @@
+@import url("global.css");
+
+.musiclist,
+.popup-content,
+.file,
+.title,
+.popup-btn,
+td {
+    color: white;
+    font-size: var(--font-size2);
+    font-weight: var(--medium);
+    padding-bottom: var(--gap3);
+    text-align: center; /* Center align content within td */
+}
+
+td img {
+    max-width: var(--box-size);
+    border-radius: var(--radius);
+    display: inline-block; /* Ensure images are aligned to the left */
+}
+
+td .info {
+    margin-left: 10px; /* Adjust margin as needed */
+    text-align: left; /* Align text content to the left */
+}
+
+td .info p {
+    margin-bottom: 5px; /* Add margin between time and audio */
+}
+
+td audio {
+    margin-top: 5px; /* Add margin to separate audio from other content */
+    display: block; /* Ensure audio element takes full width of td */
+    margin: 0 auto; /* Center audio horizontally within td */
+}
+
+.btn {
+    display: flex;
+}
+
+.musiclist,
+.popup-content,
+.file {
+    flex-direction: column;
+}
+
+.top {
+    height: 300px;
+    background: url(../asset/bgimg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+    background: url(../asset/bg-list.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.add-btn {
+    cursor: pointer;
+    position: absolute;
+    top: var(--gap2);
+    right: var(--gap4);
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 8px 8px 8px 2px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: var(--duration);
+}
+
+.add-btn:hover {
+    background: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+}
+
+.popup-content {
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 430px;
+    position: absolute;
+    top: var(--gap5);
+    right: var(--gap5);
+    border-radius: var(--radius);
+    animation: popup-animation var(--duration);
+    transform-origin: right;
+}
+
+@keyframes popup-animation {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.popup-close-animation {
+    animation: closePopupAnimation var(--duration);
+    transform-origin: right;
+}
+
+@keyframes closePopupAnimation {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.popup h2 {
+    margin-top: var(--gap2);
+    font-size: var(--font-size3);
+}
+
+form {
+    width: 350px;
+}
+
+.file {
+    font-weight: var(--semibold);
+    height: 200px;
+    margin-top: var(--gap2);
+    margin-bottom: var(--gap2);
+    border-radius: var(--radius);
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--pink4);
+    gap: var(--gap1);
+}
+
+.file input[type="file"] {
+    display: none;
+}
+
+.file label {
+    cursor: pointer;
+    background-color: var(--pink3);
+    font-size: var(--font-size1);
+    padding: var(--gap1) var(--gap2);
+    border-radius: var(--radius);
+    color: white;
+    transition: var(--duration);
+}
+
+.file label:hover {
+    background-color: var(--pink4);
+}
+
+.title {
+    margin-bottom: var(--gap4);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title label {
+    font-weight: var(--bold);
+    font-size: var(--font-size2);
+}
+
+.title input[type="text"] {
+    font-weight: var(--semibold);
+    background-color: var(--gray5);
+    border-radius: var(--radius);
+    border: none;
+    padding: var(--gap1);
+    color: var(--semiwhite);
+    font-size: var(--font-size1);
+    outline: none;
+    width: calc(257px - var(--gap1));
+}
+
+.popup-btn {
+    justify-content: space-between;
+    margin-bottom: var(--gap2);
+}
+
+.popup-btn button img {
+    max-height: var(--gap3);
+    transition: var(--duration);
+}
+
+.popup-btn button:hover img {
+    filter: brightness(0.8);
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    gap: var(--gap1);
+    color: white;
+    font-size: var(--font-size2);
+    font-weight: var(--medium);
+    padding-bottom: var(--gap3);
+}
+
+td img {
+    max-width: var(--box-size);
+    border-radius: var(--radius);
+}
+
+tr {
+    justify-content: space-between;
+    align-items: center;
+    margin-right: var(--gap4);
+    margin-left: var(--gap3);
+}
+
+.btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: var(--button-size);
+    color: white;
+}
+/* Style the button */
+.beli {
+    background-color: #FF317B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.beli:hover {
+    background-color: #FF1E63;
+}
+
+/* Optional: Add margin to separate buttons */
+.beli + .beli {
+    margin-left: 10px;
+}

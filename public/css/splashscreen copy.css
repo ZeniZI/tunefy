@@ -1,0 +1,58 @@
+/* The side navigation menu */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    word-spacing: 2px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.splashscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/images/graphics/bg-splash.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button {
+    margin-top: 51px;
+    margin-bottom: 69px;
+    background-color: #ff317b;
+    border: 1px;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+button:hover {
+    background-color: transparent;
+    outline: 5px solid #ff317b;
+    outline-offset: -2px;
+    cursor: pointer;
+}
+h1 {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 27px;
+}
+span {
+    color: #ff317b;
+}
+body {
+    height: 100vh;
+    overflow-y: hidden;
+    background-size: contain;
+}

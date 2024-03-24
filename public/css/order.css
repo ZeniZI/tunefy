@@ -1,0 +1,160 @@
+@import url(global.css);
+
+.overview {
+    height: 100vh;
+    position: relative;
+    background: url(../asset/bg-overview.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.statistics {
+    display: flex;
+    gap: var(--gap3);
+    padding-left: var(--gap3);
+    padding-right: var(--gap3);
+}
+
+.statistics .box {
+    border-radius: var(--radius);
+    width: var(--box-size2);
+    display: flex;
+    justify-content: center;
+}
+
+.statistic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--box-size1);
+    width: var(--statistic);
+}
+
+.statistics .box:nth-child(1) {
+    background: var(--color-box1);
+}
+
+.statistics .box:nth-child(2) {
+    background: var(--color-box2);
+}
+
+.statistics .box:nth-child(3) {
+    background: var(--color-box3);
+}
+
+.statistics .box:nth-child(4) {
+    background: var(--color-box4);
+}
+
+.stat-data {
+    display: flex;
+    flex-direction: column;
+    gap: var(--radius);
+    font-weight: var(--bold);
+}
+
+.stat-data h2 {
+    font-size: var(--font-size2);
+}
+
+.stat-data p {
+    font-size: var(--font-size3);
+}
+
+.stat-icon i {
+    font-size: 54px;
+}
+
+.accounts-table {
+    margin-top: var(--gap2);
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--gap3);
+    margin-right: var(--gap3);
+}
+
+.table-top {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--semiwhite2);
+}
+
+.table-top h2 {
+    margin-left: var(--gap3);
+    font-size: var(--font-size3);
+}
+
+.searchbar {
+    position: relative;
+    margin-right: var(--gap3);
+}
+
+.searchbar i {
+    position: absolute;
+    color: var(--gray6);
+    font-size: var(--font-size3);
+    padding-left: 8px;
+    top: 12px;
+}
+
+.searchbar input {
+    border: none;
+    outline: none;
+    font-size: var(--font-size2);
+    padding: var(--gap1);
+    padding-left: var(--gap3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead,
+tbody,
+tr,
+td {
+    color: var(--gray6);
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size2);
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+th {
+    margin-left: var(--gap3);
+    margin-right: var(--gap3);
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+td {
+    margin-left: var(--gap3);
+    margin-right: var(--gap3);
+    height: 54px;
+    display: flex;
+    align-items: center;
+}
+
+thead {
+    background: var(--semiwhite3);
+}
+
+tbody {
+    background: var(--semiwhite4);
+}
+
+.accounts-table button {
+    font-size: var(--font-size3);
+    color: var(--gray6);
+}

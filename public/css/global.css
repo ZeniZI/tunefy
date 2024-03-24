@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --pink1: #a5023d;
+    --pink2: #ff317b;
+    --pink3: #ac5675;
+    --pink4: #a42854;
+
+    --gray1: #282727;
+    --gray2: #2b2b2b;
+    --gray3: #313131;
+    --gray4: #3b3b3b;
+    --gray5: #2e2e2e;
+    --gray6: #646262;
+
+    --color-box1: #fb2576;
+    --color-box2: #a91079;
+    --color-box3: #570a57;
+    --color-box4: #2e0249;
+
+    --semiwhite1: #d0d0d0;
+    --semiwhite2: #d0cece;
+    --semiwhite3: #e7e4e4;
+    --semiwhite4: #f3f2f2;
+
+    --font-size1: 16px;
+    --font-size2: 20px;
+    --font-size3: 30px;
+
+    --button-size: 24px;
+
+    --extralight: 100;
+    --thin: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+    --black: 900;
+
+    --gap1: 16px;
+    --gap2: 28px;
+    --gap3: 42px;
+    --gap4: 64px;
+    --gap5: 120px;
+
+    --cover-art: 86px;
+
+    --box-size1: 96px;
+    --box-size2: 265px;
+    --statistic: 200px;
+
+    --radius: 10px;
+
+    --duration: 0.3s ease;
+
+    --reduced-size1: 0.3;
+    --reduced-size2: 0.5;
+    --reduced-size3: 0.6;
+}
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+img {
+    pointer-events: none;
+}
+
+h1 {
+    margin-top: var(--gap2);
+    margin-left: var(--gap3);
+    margin-bottom: var(--gap3);
+    font-size: var(--font-size3);
+    color: white;
+    font-weight: var(--semibold);
+}
+
+button {
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.sidebar {
+    overflow-y: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 236px;
+    background-color: var(--gray3);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar img {
+    width: 140px;
+    margin-top: 60px;
+    margin-left: 48px;
+}
+
+.menu {
+    position: absolute;
+    top: 168px;
+    display: flex;
+    flex-direction: column;
+    font-weight: var(--semibold);
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--semiwhite1);
+    font-size: var(--font-size1);
+    padding-left: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 236px;
+    cursor: pointer;
+    transition: var(--duration);
+    letter-spacing: 1px;
+}
+
+.sidebar a:hover {
+    background: var(--gray4);
+    color: var(--pink2);
+    text-shadow: 0 0 20px var(--pink2);
+    letter-spacing: 0px;
+}
+
+.page {
+    position: absolute;
+    height: 100vh;
+    left: 236px;
+    width: calc(100% - 236px);
+}
+

@@ -1,0 +1,45 @@
+ @import url("global.css");
+
+.splashscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../asset/graphics/bg-splash.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: var(--gap3);
+}
+
+img {
+    width: 515px;
+}
+
+button {
+    padding: calc(var(--gap1) / 1.5) var(--gap1);
+    background: var(--pink2);
+    border-radius: var(--radius);
+    color: white;
+    font-size: var(--font-size1);
+    border: 2px solid var(--pink2);
+    font-weight: var(--bold);
+    transition: var(--duration);
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid var(--pink2);
+}
+
+h2 {
+    color: white;
+    font-weight: var(--semibold);
+    text-align: center;
+    font-size: 27px;
+}
+
+span {
+    color: var(--pink2);
+}

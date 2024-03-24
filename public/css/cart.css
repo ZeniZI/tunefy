@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.dashboard {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #3B3B3B, #3B3B3B);
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+.dashboard {
+    position: relative;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #2E2E2E;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar img {
+    width: 200px;
+    margin: 40px;
+}
+
+.sidebar a {
+    display: block;
+    color: rgb(237, 237, 237);
+    padding: 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #3B3B3B;
+    color: #FF317B;
+}
+
+.searchbar {
+    position: relative;
+}
+
+.header {
+    margin-left: 390px;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h5 {
+    margin-top: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.searchbar i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #aaa;
+}
+
+input[type=text],
+select {
+    width: calc(100% - 40px);
+    padding: 12px 40px 12px 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+table {
+    margin-left: 390px;
+    width: 1220px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+tr{
+    background-color: #f2f2f2;
+}
+
+
+    tbody:before {line-height:1em; content:"\200C"; display:block;}
+
+
+th {
+    margin-left: 40px;
+    font-weight: bold;
+    color: #5d5d5d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+.wider-column {
+    width: 60%;
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.action-column {
+    white-space: nowrap;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Style for custom checkbox */
+/* Style for custom checkbox */
+/* Style for custom checkbox */
+.custom-checkbox {
+    margin-right: 30px; /* Adjust margin as needed */
+    margin-left: 25px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 24px; /* Adjust size of checkbox */
+    height: 24px; /* Adjust size of checkbox */
+    border: 2px solid #aaa; /* Set border color */
+    border-radius: 4px; /* Set border radius */
+    outline: none;
+    position: relative; /* Position for icon */
+}
+
+/* Style for checked state */
+.custom-checkbox:checked {
+    background-color: #FF317B; /* Set checked background color */
+}
+
+/* Style for the check icon */
+.custom-checkbox:checked::before {
+    content: '\2714'; /* Unicode for checkmark icon */
+    font-size: 18px; /* Adjust size of the checkmark */
+    color: #fff; /* Color of the checkmark */
+    position: absolute; /* Position the checkmark */
+    top: 50%; /* Adjust position vertically */
+    left: 50%; /* Adjust position horizontally */
+    transform: translate(-50%, -50%); /* Center the checkmark */
+}
+h1{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: -20px;
+    
+}
+h2{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: #3B3B3B;
+    align-items: start;
+    text-align: left;
+}
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: #FF317B;
+    font-weight: bold;
+  }
+.bottom {
+    background-color: #f1f1f1;
+    margin-left: 390px;
+    margin-right: 98px;
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Distribute items evenly */
+    position: fixed;
+    bottom: 0;
+    width: 1220px;
+}
+
+.total-container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+  .bottom h1{
+    font-size: 20px;
+    margin-left: 100px;
+    margin: 0;
+    margin-right: 10PX;
+    margin-left: 10px;
+    text-align: center;
+
+}
+.button {
+    background-color: #FF317B;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-right: 80px;
+    font-size: 15px;
+    font-weight: bold;
+}

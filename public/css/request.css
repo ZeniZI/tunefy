@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.dashboard {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #3B3B3B, #3B3B3B);
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.Request {
+    margin-left: 300px;
+    margin-top: 55px;
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 350px;
+    font-size: 30px;
+}
+h3 {
+  color: white;
+  text-align: left;
+  margin-top: 50px;
+
+  font-size: 30px;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+span {
+    color: #FF317B;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #2E2E2E;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar img {
+    width: 200px;
+    margin: 40px;
+}
+
+.sidebar a {
+    display: block;
+    color: rgb(237, 237, 237);
+    padding: 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #3B3B3B;
+    color: #FF317B;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.container{
+    width: 1700px;
+    margin-left: 350px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .entry{
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.33% - 110px);
+    min-height: 80px;
+    line-height: 80px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  input{
+    position: absolute;
+    width: 400px;
+    outline: none;
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 80px;
+    border-radius: 10px;
+    border: 2px solid #2E2E2E;
+    background: transparent;
+    transition: 0.01s ease;
+    z-index: 1111;
+  }
+  .labelline{
+     position: absolute;
+     font-size: 20px;
+     color: #FF317B;
+     padding: 0 25px;
+     margin: 6 30px;
+     background-color: #3B3B3B;
+     transition: 0.2s ease;
+  }
+  input:focus,
+  input:valid{
+    color: #F1F1F1;
+    border: 4px solid #2E2E2E;
+  }
+  input:focus + .labelline,
+  input:valid + .labelline{
+    color: #FF317B;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+  }
+  .entry select {
+    position: absolute;
+    width: 400px;
+    outline: none;
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 80px;
+    border-radius: 10px;
+    border: 2px solid #2E2E2E;
+    background: transparent;
+    transition: 0.01s ease;
+    z-index: 1111;
+    appearance: none; 
+    -webkit-appearance: none;
+  }
+  .entry select option{
+    background-color: #2E2E2E;
+    color: #FF317B;
+  }
+  .entry select:focus {
+    color: #3e3e3e;
+    border: 4px solid #FF317B;
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .entry select:focus + .labelline,
+  .entry select:valid + .labelline {
+    color: #FF317B;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+  }
+/* Adjust the border for the selected state */
+.entry select:valid {
+    border: 4px solid #2E2E2E;
+    color:#ececec;
+  }  
+
+  textarea {
+    position: absolute;
+    width: 1310px;
+    overflow: hidden;
+    height: 300px; /* Adjust height as needed */
+    outline: none;
+    font-size: 20px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid #2E2E2E;
+    background: transparent;
+    transition: 0.01s ease;
+    z-index: 1111;
+    resize: none; /* Disable textarea resizing */
+  }
+  
+
+  textarea:focus,
+textarea:valid {
+  color: #F1F1F1;
+  border: 4px solid #2E2E2E;
+}
+
+textarea:focus + .labelline,
+textarea:valid + .labelline {
+  color: #FF317B;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  transform: translate(-15px, -16px) scale(0.88);
+  z-index: 1111;
+}
+.agreement {
+  margin-left: 350px;
+  margin-top: 220px; /* Adjust margin-top as needed */
+  position: relative; /* Add position relative */
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+.button {
+  position: relative; /* Change position to relative */
+  background-color: #FF317B;
+  margin-top: -30px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  margin-right: 55px;
+}
+.agreement input{
+  margin-left: -180px;
+  margin-top: 8px;
+}
+.agreement label{
+font-size: 20px;
+color: white;
+}
+input[type="file"]{
+  display: none;
+}
+label[for="upload"]{
+  display: inline-block;
+  color: #FF317B;
+  border: thin solid #2E2E2E;
+  border-width: 2px;
+  background: transparent;
+  text-align: left;
+  width: 400px;
+  padding: 0px 25px;
+  font-size: 20px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+

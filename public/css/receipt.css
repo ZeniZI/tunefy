@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2px;
+    font-weight: 400;
+    box-sizing: border-box;
+    
+}
+
+.dashboard {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #3B3B3B, #3B3B3B);
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 350px;
+    font-size: 30px;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #2E2E2E;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar img {
+    width: 200px;
+    margin: 40px;
+}
+
+.sidebar a {
+    display: block;
+    color: rgb(237, 237, 237);
+    padding: 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #3B3B3B;
+    color: #FF317B;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.button {
+    background-color: #FF317B;
+    margin-top: 30px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    float: right;
+    margin-right: 150px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.cancel {
+    border: 2px solid #2E2E2E; /* Add border style */
+    /* Remove the duplicate border declaration */
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    float: left;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.receipt {
+    background-color: rgb(241, 241, 241);
+    height: 640px;
+    width: 500px;
+    margin-left: 360px;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 50px 35px 35px 35px;
+    float: left;
+    
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: #FF317B;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: #2E2E2E;
+}
+
+h5 {
+    color: white;
+    margin: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #2E2E2E;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: white;
+    margin: 5px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    color: #FF317B;
+    margin-top: 35px;
+    margin-bottom: 1px;
+}
+
+.order-info {
+    display: flex;
+    justify-content: space-between;
+}
+.order-info h4 {
+    margin-left: 6px;
+    color: #414141;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.order-info h5 {
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.total h1{
+    color: #2E2E2E;
+    font-size: 20px;
+    margin: 0px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+hr{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 25px;
+}
+.scan{
+    padding: 25px;
+    width: 620px;
+    height: 640px;
+    margin-left: 930px;
+    margin-top: 110px;
+    background-color: transparent;
+    text-align: center; /* Center the content horizontally */
+    place-content: center;
+}
+.scan h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+input[type="file"]{
+    display: none;
+}
+label{
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    background: #2E2E2E;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

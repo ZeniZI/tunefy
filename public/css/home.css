@@ -1,0 +1,216 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+
+    html {
+        scroll-behavior: smooth;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        word-spacing: 2px;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+    .feature img{
+        height: 250px;
+        margin-left: 60px;
+    }
+    .dashboard {
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(to right, #3B3B3B, #3B3B3B);
+        background-position: center;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+
+    .Home {
+        margin-left: 300px;
+        margin-top: 25px;
+    }
+
+    h2 {
+        color: white;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        margin-left: 60px;
+    }
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    span {
+        color: #FF317B;
+    }
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        background-color: #2E2E2E;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .sidebar img {
+        width: 200px;
+        margin: 40px;
+    }
+
+    .sidebar a {
+        display: block;
+        color: rgb(237, 237, 237);
+        padding: 30px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .sidebar a.active {
+        background-color: #3B3B3B;
+        color: #FF317B;
+    }
+
+    .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+    .wrapper{
+        display: flex;
+        max-width: 1300px;
+        position: relative;
+        z-index: 1;
+        margin-left: 50px;
+    }
+    .wrapper i{
+        top: 50%;
+        height: 44px;
+        width: 44px;
+        color: #343F4F;
+        cursor: pointer;
+        font-size: 1.15rem;
+        position: absolute;
+        text-align: center;
+        line-height: 44px;
+        background: #fff;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+        z-index: 2;
+    }
+    .wrapper i:active{
+        transform: translateY(-50%) scale(0.9);
+    }
+    .wrapper i:hover{
+        background: #f2f2f2;
+    }
+    .wrapper i:first-child{
+        left: -22px;
+        display: none;
+    }
+    .wrapper i:last-child{
+        right: -22px;
+        z-index: 2;
+    }
+    .wrapper .carousel {
+        font-size: 0px;
+        cursor: pointer;
+        display: flex; /* Use flexbox */
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    .carousel.dragging{ 
+        cursor: grab;
+        scroll-behavior: auto;
+    }
+    .carousel.dragging img{
+    pointer-events: none;
+    }
+    .carousel img {
+    flex: 0 0 calc(100% / 3); /* Use flex-basis to set the width of each image */
+    height: 200px; /* Set the height of each image */
+    object-fit: cover;
+    user-select: none;
+    width: 300px;
+    margin-left: 14px;
+    }
+    .carousel img:first-child {
+    margin-left: 0px;
+    }
+    .container {
+        
+    display: inline-block;
+    position: relative; /* Add this line */
+    margin: 14px;
+    }
+
+    .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* Update this line */
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FF317B;
+    /* Adjust the color and opacity as needed */
+    }
+
+    .container:hover .overlay {
+    opacity: 0.8;
+    }
+
+    .text {
+        color: white;
+        letter-spacing: 1px;
+        font-size: 20px;
+        position: absolute;
+        font-weight: bold;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Center the text horizontally */
+        width: 100%; /* Ensure the text takes up the full width of its parent */
+        box-sizing: border-box; /* Include padding and border in width calculation */
+        padding: 10px; /* Add padding to the text */
+        border-radius: 5px;
+        background-color: rgba(255, 49, 123, 0.8); /* Set the background color with opacity */
+    }
+
+    @media screen and (max-width: 900px) {
+    .carousel img{
+    width: calc(100% / 2);
+    }
+    }
+
+    @media screen and (max-width: 550px) {
+    .carousel img{
+    width: 100%;
+    }
+    }
+    @media screen and (max-width: 400px) {
+        .sidebar a {
+            text-align: center;
+            float: none;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .sidebar a {
+            float: left;
+        }
+
+        div.content {
+            margin-left: 0;
+        }
+    }
